@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  portfolio-1:
+    image: portfolio-1
+    build: .
+    volumes:
+      - ./src/:/app/
+    ports:
+      - "8000:8000"
+    tty: true
+    stdin_open: true
